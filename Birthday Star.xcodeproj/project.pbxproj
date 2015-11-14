@@ -16,6 +16,7 @@
 		6142B1371BF40897006C1A38 /* Birthday_StarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1361BF40897006C1A38 /* Birthday_StarUITests.swift */; };
 		6142B1451BF417AD006C1A38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1441BF417AD006C1A38 /* SecondViewController.swift */; };
 		6142B1471BF42566006C1A38 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6142B1461BF42565006C1A38 /* iAd.framework */; };
+		617A3AD51BF6C68D00A01580 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6142B1381BF40897006C1A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6142B1441BF417AD006C1A38 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6142B1461BF42565006C1A38 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6142B1161BF40897006C1A38 /* AppDelegate.swift */,
 				6142B1181BF40897006C1A38 /* ViewController.swift */,
 				6142B11A1BF40897006C1A38 /* Main.storyboard */,
+				617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */,
 				6142B1441BF417AD006C1A38 /* SecondViewController.swift */,
 				6142B11D1BF40897006C1A38 /* Assets.xcassets */,
 				6142B11F1BF40897006C1A38 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			files = (
 				6142B1451BF417AD006C1A38 /* SecondViewController.swift in Sources */,
 				6142B1191BF40897006C1A38 /* ViewController.swift in Sources */,
+				617A3AD51BF6C68D00A01580 /* ThirdViewController.swift in Sources */,
 				6142B1171BF40897006C1A38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +496,7 @@
 				6142B13D1BF40897006C1A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6142B13E1BF40897006C1A38 /* Build configuration list for PBXNativeTarget "Birthday StarTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				6142B1401BF40897006C1A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6142B1411BF40897006C1A38 /* Build configuration list for PBXNativeTarget "Birthday StarUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				6142B1431BF40897006C1A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
