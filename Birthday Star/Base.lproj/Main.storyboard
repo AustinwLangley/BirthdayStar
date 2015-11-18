@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-Cd-sfl">
-                                <rect key="frame" x="238" y="163" width="124" height="21"/>
+                                <rect key="frame" x="238" y="133" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -35,33 +35,48 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-9u-i9w">
-                                <rect key="frame" x="226" y="443" width="148" height="30"/>
+                                <rect key="frame" x="226" y="416" width="148" height="30"/>
                                 <state key="normal" title="Find my Birthday Star">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lpE-7E-sif" kind="show" id="278-pq-Zgx"/>
+                                    <segue destination="lpE-7E-sif" kind="show" identifier="segueToSecond" id="278-pq-Zgx"/>
                                 </connections>
                             </button>
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7n-UV-6yU">
                                 <rect key="frame" x="60" y="534" width="480" height="66"/>
                             </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K94-1B-8jv">
+                                <rect key="frame" x="218" y="72" width="165" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jm0-9s-o3c"/>
+                                    <constraint firstAttribute="width" constant="165" id="qH1-rH-d5o"/>
+                                </constraints>
+                                <state key="normal" title="What is a Birthday Star?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VAr-Y1-YgB" kind="presentation" identifier="segueToThird" id="Gyr-R0-0hH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WXT-9u-i9w" firstAttribute="centerX" secondItem="K6v-I9-Owd" secondAttribute="centerX" id="6B1-He-Pah"/>
-                            <constraint firstItem="bVF-Cd-sfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DIj-Ym-mr4"/>
+                            <constraint firstItem="t7n-UV-6yU" firstAttribute="centerX" secondItem="K6v-I9-Owd" secondAttribute="centerX" id="Enp-7s-YRb"/>
                             <constraint firstItem="FyD-0X-gCa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IdE-qR-cm5"/>
-                            <constraint firstItem="t7n-UV-6yU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="MVq-rE-MgJ"/>
-                            <constraint firstItem="K6v-I9-Owd" firstAttribute="top" secondItem="bVF-Cd-sfl" secondAttribute="bottom" constant="8" symbolic="YES" id="OuA-Lq-rtY"/>
-                            <constraint firstItem="bVF-Cd-sfl" firstAttribute="centerX" secondItem="K6v-I9-Owd" secondAttribute="centerX" id="ULO-yo-Psr"/>
+                            <constraint firstItem="t7n-UV-6yU" firstAttribute="top" secondItem="WXT-9u-i9w" secondAttribute="bottom" constant="88" id="QL9-sx-A3P"/>
                             <constraint firstItem="FyD-0X-gCa" firstAttribute="leading" secondItem="K6v-I9-Owd" secondAttribute="leading" id="VC3-1Q-fJI"/>
+                            <constraint firstItem="t7n-UV-6yU" firstAttribute="centerX" secondItem="WXT-9u-i9w" secondAttribute="centerX" id="Vly-mU-tfg"/>
                             <constraint firstItem="K6v-I9-Owd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dbC-Uw-hVP"/>
-                            <constraint firstItem="WXT-9u-i9w" firstAttribute="top" secondItem="K6v-I9-Owd" secondAttribute="bottom" constant="35" id="g2x-oP-kuR"/>
                             <constraint firstItem="FyD-0X-gCa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hdk-ua-51k"/>
+                            <constraint firstItem="bVF-Cd-sfl" firstAttribute="centerX" secondItem="K6v-I9-Owd" secondAttribute="centerX" id="lEh-rd-IFS"/>
                             <constraint firstItem="FyD-0X-gCa" firstAttribute="trailing" secondItem="K6v-I9-Owd" secondAttribute="trailing" id="mEx-lh-uC5"/>
+                            <constraint firstItem="K6v-I9-Owd" firstAttribute="top" secondItem="bVF-Cd-sfl" secondAttribute="bottom" constant="38" id="mJM-QS-RRS"/>
                             <constraint firstItem="K6v-I9-Owd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mOv-gN-hmk"/>
-                            <constraint firstItem="t7n-UV-6yU" firstAttribute="centerX" secondItem="WXT-9u-i9w" secondAttribute="centerX" id="vb9-Ve-YVO"/>
+                            <constraint firstItem="bVF-Cd-sfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozz-Ap-E5r"/>
+                            <constraint firstItem="t7n-UV-6yU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tsW-2V-Jly"/>
+                            <constraint firstItem="K94-1B-8jv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yNE-GS-D3H"/>
+                            <constraint firstItem="K94-1B-8jv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yvk-2V-9Wb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Birthday Star" id="hqb-iK-Mil"/>
@@ -73,6 +88,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1643" y="468"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="cEc-l0-Xsp">
+            <objects>
+                <viewController id="VAr-Y1-YgB" customClass="FourthViewController" customModule="Birthday_Star" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NmY-4y-Ine"/>
+                        <viewControllerLayoutGuide type="bottom" id="iG6-2K-kfY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c64-YU-2q0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star filled sky" translatesAutoresizingMaskIntoConstraints="NO" id="07l-wy-435">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-iA-sUf">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <mutableString key="text">When you look up at the night sky, you see all of the billions of stars that make up our galaxy.  Did you know that you are actually looking into the past when you do this?  Light travels at 670 million miles / hour and for a star that is 10 light years away (59 trillion miles) in distance, the light you see from that star today took 10 years to get here.  
+
+So, you can always find yourself in the night sky.  You can find a star that is equal to the same number of light years as you are old.  The light from this star was created the same instance as you were born and is now just getting to earth.  For example if you are 25 years old, just look at a star that is 25 light years away and you will see light that is as old as you. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.97695616485098025" blue="0.96885266674745663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3df-JL-2Dg">
+                                <rect key="frame" x="277" y="502" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="i3R-rf-JnR"/>
+                                </constraints>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="VAr-Y1-YgB" eventType="touchUpInside" id="tDp-Yn-JiZ"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="VCu-4S-PC5">
+                                <rect key="frame" x="60" y="534" width="480" height="66"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iG6-2K-kfY" firstAttribute="top" secondItem="Ci7-iA-sUf" secondAttribute="bottom" id="GFB-sg-oxD"/>
+                            <constraint firstAttribute="trailing" secondItem="07l-wy-435" secondAttribute="trailing" id="GOP-HT-YFJ"/>
+                            <constraint firstItem="3df-JL-2Dg" firstAttribute="centerX" secondItem="Ci7-iA-sUf" secondAttribute="centerX" id="VxD-Ar-HPz"/>
+                            <constraint firstItem="VCu-4S-PC5" firstAttribute="bottom" secondItem="iG6-2K-kfY" secondAttribute="top" id="Ydb-Vz-xJ1"/>
+                            <constraint firstItem="Ci7-iA-sUf" firstAttribute="trailing" secondItem="c64-YU-2q0" secondAttribute="trailingMargin" id="bUm-5i-fDQ"/>
+                            <constraint firstItem="07l-wy-435" firstAttribute="leading" secondItem="c64-YU-2q0" secondAttribute="leading" id="d44-wk-Mrm"/>
+                            <constraint firstItem="VCu-4S-PC5" firstAttribute="centerX" secondItem="3df-JL-2Dg" secondAttribute="centerX" id="fQT-HV-dOw"/>
+                            <constraint firstItem="07l-wy-435" firstAttribute="top" secondItem="NmY-4y-Ine" secondAttribute="bottom" id="hDJ-Pw-E79"/>
+                            <constraint firstItem="Ci7-iA-sUf" firstAttribute="leading" secondItem="c64-YU-2q0" secondAttribute="leadingMargin" id="jJM-Yc-fHN"/>
+                            <constraint firstItem="07l-wy-435" firstAttribute="bottom" secondItem="iG6-2K-kfY" secondAttribute="top" id="k8y-dH-VEI"/>
+                            <constraint firstItem="iG6-2K-kfY" firstAttribute="top" secondItem="3df-JL-2Dg" secondAttribute="bottom" constant="68" id="r3v-Qv-ThM"/>
+                            <constraint firstItem="Ci7-iA-sUf" firstAttribute="top" secondItem="NmY-4y-Ine" secondAttribute="bottom" id="rHL-lC-OhF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbB-yt-7xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="1213"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="z1c-zQ-Jdu">
