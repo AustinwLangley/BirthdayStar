@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612BF2451C1B424A0092A77F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BF2441C1B424A0092A77F /* FirstViewController.swift */; };
 		6142B1171BF40897006C1A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1161BF40897006C1A38 /* AppDelegate.swift */; };
-		6142B1191BF40897006C1A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1181BF40897006C1A38 /* ViewController.swift */; };
 		6142B11C1BF40897006C1A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6142B11A1BF40897006C1A38 /* Main.storyboard */; };
 		6142B11E1BF40897006C1A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6142B11D1BF40897006C1A38 /* Assets.xcassets */; };
 		6142B1211BF40897006C1A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6142B11F1BF40897006C1A38 /* LaunchScreen.storyboard */; };
 		6142B12C1BF40897006C1A38 /* Birthday_StarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B12B1BF40897006C1A38 /* Birthday_StarTests.swift */; };
 		6142B1371BF40897006C1A38 /* Birthday_StarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1361BF40897006C1A38 /* Birthday_StarUITests.swift */; };
 		6142B1451BF417AD006C1A38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6142B1441BF417AD006C1A38 /* SecondViewController.swift */; };
-		6142B1471BF42566006C1A38 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6142B1461BF42565006C1A38 /* iAd.framework */; };
-		615E2F7E1BFD08E900DF4960 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E2F7D1BFD08E900DF4960 /* FourthViewController.swift */; };
 		617A3AD51BF6C68D00A01580 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */; };
+		61A5EDD81C18E7B100332B41 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5EDD71C18E7B100332B41 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		612BF2441C1B424A0092A77F /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		6142B1131BF40897006C1A38 /* Birthday Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Birthday Star.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6142B1161BF40897006C1A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6142B1181BF40897006C1A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6142B11B1BF40897006C1A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6142B11D1BF40897006C1A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6142B1201BF40897006C1A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +51,8 @@
 		6142B1361BF40897006C1A38 /* Birthday_StarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday_StarUITests.swift; sourceTree = "<group>"; };
 		6142B1381BF40897006C1A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6142B1441BF417AD006C1A38 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		6142B1461BF42565006C1A38 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		615E2F7D1BFD08E900DF4960 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		61A5EDD71C18E7B100332B41 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = ../RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6142B1471BF42566006C1A38 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +83,6 @@
 		6142B10A1BF40897006C1A38 = {
 			isa = PBXGroup;
 			children = (
-				6142B1461BF42565006C1A38 /* iAd.framework */,
 				6142B1151BF40897006C1A38 /* Birthday Star */,
 				6142B12A1BF40897006C1A38 /* Birthday StarTests */,
 				6142B1351BF40897006C1A38 /* Birthday StarUITests */,
@@ -108,14 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				6142B1161BF40897006C1A38 /* AppDelegate.swift */,
-				6142B1181BF40897006C1A38 /* ViewController.swift */,
 				6142B11A1BF40897006C1A38 /* Main.storyboard */,
-				617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */,
+				61A5EDD71C18E7B100332B41 /* RootViewController.swift */,
+				612BF2441C1B424A0092A77F /* FirstViewController.swift */,
 				6142B1441BF417AD006C1A38 /* SecondViewController.swift */,
+				617A3AD41BF6C68D00A01580 /* ThirdViewController.swift */,
 				6142B11D1BF40897006C1A38 /* Assets.xcassets */,
 				6142B11F1BF40897006C1A38 /* LaunchScreen.storyboard */,
 				6142B1221BF40897006C1A38 /* Info.plist */,
-				615E2F7D1BFD08E900DF4960 /* FourthViewController.swift */,
 			);
 			path = "Birthday Star";
 			sourceTree = "<group>";
@@ -206,6 +202,7 @@
 				TargetAttributes = {
 					6142B1121BF40897006C1A38 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = P474FQTU66;
 					};
 					6142B1261BF40897006C1A38 = {
 						CreatedOnToolsVersion = 7.1;
@@ -270,10 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6142B1451BF417AD006C1A38 /* SecondViewController.swift in Sources */,
-				6142B1191BF40897006C1A38 /* ViewController.swift in Sources */,
+				61A5EDD81C18E7B100332B41 /* RootViewController.swift in Sources */,
 				617A3AD51BF6C68D00A01580 /* ThirdViewController.swift in Sources */,
 				6142B1171BF40897006C1A38 /* AppDelegate.swift in Sources */,
-				615E2F7E1BFD08E900DF4960 /* FourthViewController.swift in Sources */,
+				612BF2451C1B424A0092A77F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,10 +413,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Birthday Star/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-Star";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birthdaystar.BirthdayStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -428,11 +428,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "Birthday Star/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-Star";
+				PRODUCT_BUNDLE_IDENTIFIER = com.birthdaystar.BirthdayStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -480,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-StarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TEST_TARGET_NAME = "Birthday Star";
 				USES_XCTRUNNER = YES;
 			};

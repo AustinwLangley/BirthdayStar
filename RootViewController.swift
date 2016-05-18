@@ -1,21 +1,18 @@
 //
-//  FourthViewController.swift
+//  RootViewController.swift
 //  Birthday Star
 //
-//  Created by AL on 11/18/15.
+//  Created by AL on 12/9/15.
 //  Copyright © 2015 AL. All rights reserved.
 //
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class RootViewController: UITabBarController {
 
-    @IBAction func dismiss(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.selectedIndex = 0
         // Do any additional setup after loading the view.
     }
 
