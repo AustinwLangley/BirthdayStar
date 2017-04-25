@@ -33,11 +33,11 @@ class SecondViewController: UIViewController {
     var starFactThree: String?
     let toolbar = UIToolbar()
     var actionBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "share:")
+        return UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(SecondViewController.share(_:)))
     }
     var flexibleSpaceBarButtonItem: UIBarButtonItem {
         // Note that there's no target/action since this represents empty space.
-        return UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        return UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     }
     
     override func viewDidLoad() {
@@ -45,19 +45,19 @@ class SecondViewController: UIViewController {
         
         self.title = "Your Star"
         
-        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
         
         navigationItem.backBarButtonItem = backButton
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
             navigationItem.rightBarButtonItem = actionBarButtonItem
         }
         
         
-        learnButton.backgroundColor = UIColor.clearColor()
+        learnButton.backgroundColor = UIColor.clear
         learnButton.layer.cornerRadius = 5
         learnButton.layer.borderWidth = 2
-        learnButton.layer.borderColor = UIColor.whiteColor().CGColor
+        learnButton.layer.borderColor = UIColor.white.cgColor
         
         if yearsOld! < 4 {
         starDescriptionLabel.text = "Your first Birthday Star will be waiting for you when you turn 4 years old!  Did you know that \(currentBirthdayStar!) is \(distance!) away?  The light that shines on you was created 8 minutes ago in the past."
@@ -82,25 +82,25 @@ class SecondViewController: UIViewController {
     
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let thirdScene = segue.destinationViewController as! ThirdViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let thirdScene = segue.destination as! ThirdViewController
         thirdScene.currentBirthdayStar = self.currentBirthdayStar
         thirdScene.distance = self.distance
         thirdScene.starInfo = self.starInfo
     }
 
     
-    override func viewWillAppear(animated: Bool) {
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
-            self.tabBarController?.tabBar.hidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+            self.tabBarController?.tabBar.isHidden = true
         } else {
-            toolbar.frame = CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)
+            toolbar.frame = CGRect(x: 0, y: self.view.frame.size.height - 49, width: self.view.frame.size.width, height: 49)
             self.tabBarController!.view.addSubview(toolbar)
             configureToolbar()
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         self.toolbar.removeFromSuperview()
     }
     
@@ -116,18 +116,18 @@ class SecondViewController: UIViewController {
         
     }
     
-    func share(sender: AnyObject) {
+    func share(_ sender: AnyObject) {
         let firstActivityItem = "I found out that my #BirthdayStar is \(currentBirthdayStar!) from the Birthday Star App. What's yours? apple.co/1MlzqFW"
         
         let activityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
-            self.presentViewController(activityViewController, animated: true, completion: nil)
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
+            self.present(activityViewController, animated: true, completion: nil)
         }
         else {            
-            if activityViewController.respondsToSelector("popoverPresentationController") {
+            if activityViewController.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
                 activityViewController.popoverPresentationController!.barButtonItem = sender as? UIBarButtonItem
-                self.presentViewController(activityViewController, animated: true, completion: nil)
+                self.present(activityViewController, animated: true, completion: nil)
             }
         }
     }

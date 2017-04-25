@@ -203,13 +203,16 @@
 					6142B1121BF40897006C1A38 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = P474FQTU66;
+						LastSwiftMigration = 0820;
 					};
 					6142B1261BF40897006C1A38 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 6142B1121BF40897006C1A38;
 					};
 					6142B1311BF40897006C1A38 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 6142B1121BF40897006C1A38;
 					};
 				};
@@ -420,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.birthdaystar.BirthdayStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -436,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.birthdaystar.BirthdayStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -448,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-StarTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birthday Star.app/Birthday Star";
 			};
 			name = Debug;
@@ -460,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-StarTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birthday Star.app/Birthday Star";
 			};
 			name = Release;
@@ -471,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-StarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Birthday Star";
 				USES_XCTRUNNER = YES;
 			};
@@ -484,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.birthdaystar.Birthday-StarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Birthday Star";
 				USES_XCTRUNNER = YES;
 			};

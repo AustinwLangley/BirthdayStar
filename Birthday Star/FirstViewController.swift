@@ -117,31 +117,31 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         ("Lambda Geminorum","100.9","https://en.wikipedia.org/wiki/Lambda_Geminorum", "It is in the constellation Gemini.", "Its radius is 2.8 times the radius of the Sun.", "It is only 800 million years old.  Our Sun is 4.5 billion years old."),
         ("UY Scuti(The Largest Known Star)","9500","https://en.wikipedia.org/wiki/UY_Scuti", "It has been classified as bright red supergiant.", "It has a radius that is 1708 times the radius of the Sun.", "If it was placed at the center of our Solar System, it would engulf the orbit of Jupiter.")]
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return years.count
     }
     
-    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         let year = years[row]
-        let myTitle = NSAttributedString(string: year, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
+        let myTitle = NSAttributedString(string: year, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.white])
         return myTitle
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
         
         navigationItem.backBarButtonItem = backButton
         
-        starButton.backgroundColor = UIColor.clearColor()
+        starButton.backgroundColor = UIColor.clear
         starButton.layer.cornerRadius = 5
         starButton.layer.borderWidth = 2
-        starButton.layer.borderColor = UIColor.whiteColor().CGColor
+        starButton.layer.borderColor = UIColor.white.cgColor
         
         for x in 1...100 {
             if x < 40 {
@@ -155,9 +155,9 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         yearPickerView.selectRow(3, inComponent: 0, animated: true)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
-            self.tabBarController?.tabBar.hidden = false
+    override func viewWillAppear(_ animated: Bool) {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+            self.tabBarController?.tabBar.isHidden = false
         }
     }
     
@@ -165,12 +165,12 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         super.didReceiveMemoryWarning()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "segueToSecond" {
-            let secondScene = segue.destinationViewController as! SecondViewController
+            let secondScene = segue.destination as! SecondViewController
             
-            let selectedYearRow = yearPickerView.selectedRowInComponent(0)
+            let selectedYearRow = yearPickerView.selectedRow(inComponent: 0)
             
             let (star, distance, info, factOne, factTwo, factThree) = stars[selectedYearRow]
             secondScene.currentBirthdayStar = star

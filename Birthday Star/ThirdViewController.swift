@@ -17,21 +17,21 @@ class ThirdViewController: UIViewController {
     var starInfo: String?
     let toolbar = UIToolbar()
     var actionBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "share:")
+        return UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ThirdViewController.share(_:)))
     }
     var flexibleSpaceBarButtonItem: UIBarButtonItem {
         // Note that there's no target/action since this represents empty space.
-        return UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        return UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     }
     
     override func viewDidLoad() {
         
         self.title = "Star Info"
-        let url = NSURL (string: starInfo!)
-        let requestObj = NSURLRequest(URL: url!);
+        let url = URL (string: starInfo!)
+        let requestObj = URLRequest(url: url!);
         webView.loadRequest(requestObj)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
             navigationItem.rightBarButtonItem = actionBarButtonItem
         }
         
@@ -41,17 +41,17 @@ class ThirdViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
-            self.tabBarController?.tabBar.hidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+            self.tabBarController?.tabBar.isHidden = true
         } else {
-        toolbar.frame = CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)
+        toolbar.frame = CGRect(x: 0, y: self.view.frame.size.height - 49, width: self.view.frame.size.width, height: 49)
         self.tabBarController!.view.addSubview(toolbar)
         configureToolbar()
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         self.toolbar.removeFromSuperview()
     }
     
@@ -66,18 +66,18 @@ class ThirdViewController: UIViewController {
         toolbar.setItems(toolbarButtonItems, animated: true)
     }
     
-    func share(sender: AnyObject) {
+    func share(_ sender: AnyObject) {
         let firstActivityItem = "I found out that my #BirthdayStar is \(currentBirthdayStar!) from the Birthday Star App. What's yours? apple.co/1MlzqFW"
         
         let activityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
-            self.presentViewController(activityViewController, animated: true, completion: nil)
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
+            self.present(activityViewController, animated: true, completion: nil)
         }
         else {
-            if activityViewController.respondsToSelector("popoverPresentationController") {
+            if activityViewController.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
                 activityViewController.popoverPresentationController!.barButtonItem = sender as? UIBarButtonItem
-                self.presentViewController(activityViewController, animated: true, completion: nil)
+                self.present(activityViewController, animated: true, completion: nil)
             }
         }
     }

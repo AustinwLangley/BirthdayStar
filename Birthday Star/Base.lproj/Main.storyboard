@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B5Q-kA-I9d">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B5Q-kA-I9d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Birthday Star-->
@@ -15,49 +19,49 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star night" translatesAutoresizingMaskIntoConstraints="NO" id="FyD-0X-gCa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Star night" translatesAutoresizingMaskIntoConstraints="NO" id="FyD-0X-gCa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmS-28-lCg">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmS-28-lCg">
                                 <rect key="frame" x="0.0" y="126" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Old Are You?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-Cd-sfl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How Old Are You?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-Cd-sfl">
                                         <rect key="frame" x="193" y="21" width="215" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="T0z-Rz-k0q"/>
                                             <constraint firstAttribute="width" constant="215" id="vK9-hB-xKp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6v-I9-Owd">
+                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6v-I9-Owd">
                                         <rect key="frame" x="20" y="59" width="560" height="216"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="xYY-D9-IO3"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="5U2-yY-j3W"/>
                                         </connections>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-9u-i9w">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-9u-i9w">
                                         <rect key="frame" x="168" y="295" width="265" height="42"/>
-                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="1li-AM-Bqq"/>
                                             <constraint firstAttribute="width" constant="265" id="Cck-Bj-p4A"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <state key="normal" title="Find My Birthday Star!">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="lpE-7E-sif" kind="show" identifier="segueToSecond" id="278-pq-Zgx"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.87766335227272729" green="0.87766335227272729" blue="0.87766335227272729" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87766335227272729" green="0.87766335227272729" blue="0.87766335227272729" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="K6v-I9-Owd" firstAttribute="centerY" secondItem="qmS-28-lCg" secondAttribute="centerY" constant="-15" id="5Da-Oe-Nk3"/>
                                     <constraint firstItem="WXT-9u-i9w" firstAttribute="top" secondItem="K6v-I9-Owd" secondAttribute="bottom" constant="20" id="8Sg-xX-65M"/>
@@ -71,7 +75,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="FyD-0X-gCa" secondAttribute="bottom" id="GVd-5Y-9dP"/>
                             <constraint firstItem="qmS-28-lCg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OtC-1c-ZrH"/>
@@ -109,13 +113,13 @@
                         <viewControllerLayoutGuide type="bottom" id="iG6-2K-kfY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c64-YU-2q0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="look at the night sky" translatesAutoresizingMaskIntoConstraints="NO" id="07l-wy-435">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="look at the night sky" translatesAutoresizingMaskIntoConstraints="NO" id="07l-wy-435">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owo-tC-ac5">
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owo-tC-ac5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="bJd-yo-jLQ"/>
@@ -130,14 +134,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ja-t4z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-ja-t4z">
                                 <rect key="frame" x="20" y="517" width="560" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="55l-vh-PUf"/>
                                 </constraints>
                                 <string key="text">Birthday Star Photo by thomas shellberg.  About Birthday Star Photo by Greg Rakozy.  Your Star Photo by Ales Krivec.  Tab bar icons provided by www.icons8.com.  App icons provided by www.iconogen.com.  This app uses material from Wikipedia which is released under the Creative Commons Attribution-Share-Alike License 3.0 located here:  www.creativecommons.org/licenses/by-sa/3.0  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -145,23 +149,23 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-Nl-4ha">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-Nl-4ha">
                                 <rect key="frame" x="0.0" y="199" width="600" height="202"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-iA-sUf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-iA-sUf">
                                         <rect key="frame" x="20" y="20" width="560" height="162"/>
                                         <string key="text">When you look up at the night sky, you see all of the billions of stars that make up our galaxy.  Did you know that you are actually looking into the past when you do this?  Light travels at 670 million miles / hour and for a star that is 10 light years away (59 trillion miles) in distance, the light you see from that star today took 10 years to get here.  
 
 So, you can always find yourself in the night sky.  You can find a star that is equal to the same number of light years as you are old.  The light from this star was created the same instance as you were born and is now just getting to earth.  For example if you are 25 years old, just look at a star that is 25 light years away and you will see light that is as old as you. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13.5"/>
-                                        <color key="textColor" red="1" green="0.97873135391892729" blue="0.96929827514399636" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.97873135391892729" blue="0.96929827514399636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         </variation>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11821340370659872" green="0.11821340370659872" blue="0.11821340370659872" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.11821340370659872" green="0.11821340370659872" blue="0.11821340370659872" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ci7-iA-sUf" firstAttribute="leading" secondItem="bUg-Nl-4ha" secondAttribute="leading" constant="20" id="8do-HI-gfy"/>
                                     <constraint firstAttribute="trailing" secondItem="Ci7-iA-sUf" secondAttribute="trailing" constant="20" id="WEX-Kc-J6M"/>
@@ -177,7 +181,7 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bUg-Nl-4ha" secondAttribute="trailing" id="0g1-kL-TXm"/>
                             <constraint firstItem="bUg-Nl-4ha" firstAttribute="centerX" secondItem="c64-YU-2q0" secondAttribute="centerX" id="EYv-Ka-f4c"/>
@@ -210,23 +214,23 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                         <viewControllerLayoutGuide type="bottom" id="I7g-Ve-ET1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lRI-1i-HgH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="256" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="star in the night sky 2" translatesAutoresizingMaskIntoConstraints="NO" id="sXP-TW-EPo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="256" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="star in the night sky 2" translatesAutoresizingMaskIntoConstraints="NO" id="sXP-TW-EPo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-OG-6uz">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-OG-6uz">
                                 <rect key="frame" x="0.0" y="158" width="600" height="287"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bH-Fd-Jtd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bH-Fd-Jtd">
                                         <rect key="frame" x="0.0" y="15" width="600" height="65"/>
                                         <string key="text">Your Star is The Alpha Centauri system which consists of three stars that are seen as one to the naked eye.  It is 4.4 lightyears away.  The light that you see from it was created the same year you were born.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-pQ-Sib">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-pQ-Sib">
                                         <rect key="frame" x="140" y="234" width="320" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="Tmw-l2-mcM"/>
@@ -234,42 +238,42 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <state key="normal" title="Learn More About Your Star">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="37m-v9-sOH" kind="show" id="aNV-da-led"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  It is the closest known star to us." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5E-LQ-Kz9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.  It is the closest known star to us." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5E-LQ-Kz9">
                                         <rect key="frame" x="150" y="120" width="300" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interesting facts about your star:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-AI-rgT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Interesting facts about your star:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-AI-rgT">
                                         <rect key="frame" x="150" y="88" width="300" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Chi-ua-t7l"/>
                                             <constraint firstAttribute="height" constant="24" id="hQ3-2F-Le2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  It is the 3rd brightest star in the night sky." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-cg-3CC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2.  It is the 3rd brightest star in the night sky." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-cg-3CC">
                                         <rect key="frame" x="150" y="146" width="300" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.  It is the brightest star in the southern constellation of Centaurus." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-AP-hDl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3.  It is the brightest star in the southern constellation of Centaurus." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-AP-hDl">
                                         <rect key="frame" x="150" y="190" width="300" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="5Wf-AP-hDl" firstAttribute="trailing" secondItem="EZ3-cg-3CC" secondAttribute="trailing" id="4IH-0i-sCP"/>
                                     <constraint firstItem="5Wf-AP-hDl" firstAttribute="top" secondItem="EZ3-cg-3CC" secondAttribute="bottom" constant="8" id="6eT-fy-Ki1"/>
@@ -313,7 +317,7 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Wc4-OG-6uz" secondAttribute="trailing" id="3pj-uk-MLO"/>
                             <constraint firstItem="Wc4-OG-6uz" firstAttribute="centerY" secondItem="lRI-1i-HgH" secondAttribute="centerY" constant="1" id="42z-wu-0GO"/>
@@ -346,7 +350,7 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTv-1b-jBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4621" y="468"/>
+            <point key="canvasLocation" x="4948" y="467"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="qld-1j-JFe">
@@ -357,19 +361,19 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                         <viewControllerLayoutGuide type="bottom" id="rXQ-Wb-3H8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AaN-CI-IsU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rx1-6W-lkX">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rx1-6W-lkX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-9K-7jz">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-9K-7jz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="rx1-6W-lkX" secondAttribute="trailing" id="2vU-T4-en0"/>
                             <constraint firstAttribute="bottom" secondItem="rx1-6W-lkX" secondAttribute="bottom" id="4gq-PE-y4P"/>
@@ -387,7 +391,7 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw9-Sv-s3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5317" y="468"/>
+            <point key="canvasLocation" x="5876" y="467"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Glc-iC-mfw">
@@ -396,8 +400,9 @@ So, you can always find yourself in the night sky.  You can find a star that is 
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dlu-KK-t1d"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="dB2-FK-lmD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="zai-aE-RFB" kind="relationship" relationship="viewControllers" id="ID4-CF-uCl"/>
